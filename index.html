@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">        
+        <header class="header">
+            <img src="./img/Logo.svg" alt="Logo Alura">
+        </header>
+        <div class="box">
+            <main class="contenido">
+                <textarea name="" id="texTarea" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="btn_container">
+                    <div class="info_text">
+                        <img src="./img/alert_msj.svg" alt=""><span>Solo letras minúsculas y sin acentos</span>
+                    </div>
+                    <div class="btn" id="botonera">
+                        <button class="azul" href="#box__desencriptar" onclick="acciones('encriptar')">Encriptar</button>
+                        <button class="blanco" href="#box__desencriptar" onclick="acciones('desencriptar')">Desencriptar</button>
+                    </div>
+                    <button class="btn_clear" onclick="limpiar()">Limpiar</button> <!-- Botón para limpiar -->
+                </div>
+            </main>
+            <aside class="container_result">
+                <div class="box_result" id="result_box">
+                    <img src="./img/Muñeco.png" alt="" class="img_result">
+                    <h3 class="title_result">Ningún mensaje fue encontrado</h3>
+                    <p class="text_result">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button id="copiarResultado" onclick="copiarResultado()">Copiar</button>
+                </div>                
+            </aside>
+        </div>
+    </div>    
+    <script src="./js/main.js"></script>          
+</body>
+</html>
